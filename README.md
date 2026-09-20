@@ -15,7 +15,7 @@ I built this drafting triangle to improve my routing skills as well using the re
 * User-Assigned GPIO Switches 
 
 ## How to Use this 
-First connect this device via usb-c cable to your pc then download the firmware files `Firmware\BUILD` then put it in the files
+First connect this device via usb-c cable to your pc then download MicroPython from https://micropython.org/download/RPI_PICO/ then download the python firmware file in `Firmware` then put it in the root of the pico folder that will appear if Micropython is successfull , Then the led will blink
 
 
 *Note the firmware is untested
