@@ -1,35 +1,42 @@
-# Carbon 
-<img width="1920" height="1080" alt="4A5A74" src="https://github.com/user-attachments/assets/939e52b6-d05a-461b-bc6b-7dc3b4fdc2b5" />
+# Illuminati
 
+<img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/1eb744ce-50b4-46ae-ab34-bf2bef09671b" />
 
 
 ## Why did I build this 
-As we know my nations air quality is pretty bad therefore I decided to make a air quality analyser to know the actual depth of this danger specially for my home 
+I built this drafting triangle to improve my routing skills as well using the render feature , which I hadn't used yet also this scale has Wi-Fi and an inbuilt accelerometer which would allow the user to level
+
+
+## Features 
+* WiFi and Bluetooth 
+* Inch and MM scale 
+* Accelerometer 
+* RGB LEDs 
+* User-Assigned GPIO Switches 
 
 ## How to Use this 
-First connect this device via usb-c cable to your pc then download the firmware files `Firmware\BUILD` or build them using the ino file in `firmware` wait for sometime as the BME688 needs sometime to stabilize its reading then after that the neopixels will show the color according to the IAQ of your enviroiment (RED = BAD , GREEN = GOOD , AMBER= MODERATE)
+First connect this device via usb-c cable to your pc then download MicroPython from https://micropython.org/download/RPI_PICO/ then download the python firmware file in `Firmware` then put it in the root of the pico folder that will appear if Micropython is successfull , Then the led will blink
+
 
 *Note the firmware is untested
 
 ## PCB Layout
 
 | PCB Layout | Schematic / Wiring |
-| :---------: | :----------------: |
-| <img src="https://github.com/user-attachments/assets/3a73baec-db82-475f-9381-0920083d8412" width="450"> | <img src="https://github.com/user-attachments/assets/8f24f5a3-780d-40a4-96aa-19cd69a7d5e3" width="450"> |
+| :---: | :---: |
+| <img width="1560" height="797" alt="PCB Layout" src="https://github.com/user-attachments/assets/b451f2f6-c7fe-4a43-8f5a-b1d58720bfc2" /> | <img width="1227" height="796" alt="Schematic / Wiring" src="https://github.com/user-attachments/assets/9d2caa30-8804-4463-a50a-27e097d5739f" /> |
 
 ## PCB Render
 
 | Front | Rear |
-| :---: | :--: |
-| <img src="https://github.com/user-attachments/assets/26b3396d-0149-4536-a438-afd6405cd3e6" width="450"> | <img src="https://github.com/user-attachments/assets/aec25729-f452-4f14-8cd8-dd5905528815" width="450"> |
+| :---: | :---: |
+| <img width="1642" height="866" alt="Front PCB Render" src="https://github.com/user-attachments/assets/f23a03a2-a0a7-40a4-a16a-25aa6b8e13da" /> | <img width="1682" height="823" alt="Rear PCB Render" src="https://github.com/user-attachments/assets/73f27301-00c8-4397-82d9-badb9d806882" /> |
 
 ## Case
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/283e111b-1747-4577-9236-17f08d73c3b3" width="700">
+  <img width="1920" height="1080" alt="Iluminati Case" src="https://github.com/user-attachments/assets/56bec5a2-9196-4479-8766-ebafde3fff1f" />
 </p>
-
-
 
 
 ---
@@ -38,13 +45,44 @@ First connect this device via usb-c cable to your pc then download the firmware 
 
 | Item | Description | Quantity | Unit Price ($) | Total Price ($) | URL |
 |------|-------------|----------|----------------|-----------------|-----|
-| PCBA | Custom PCB Manufacturing (JLCPCB) | 1 | 49.35 | 49.35 | https://jlcpcb.com |
-| Case | 3D Printed Case (Will be Printed Myself | 1 | 0.00 | 0.00 | https://hackclub.com |
-| ESP-32 C6 Mini-1 | MCU |1 | 4.47 | https://www.digikey.in/en/products/detail/espressif-systems/ESP32-C6-MINI-1-N4/17885796 |
-| BME688 | VOC sensor | 1 | 9 | https://www.digikey.in/en/products/detail/bosch-sensortec/BME688/13681261|
-| **TOTAL** |  |  |  | **63.00** |  |
+| PCB+PCBA | Custom PCB Manufacturing (JLCPCB) | 1 | 73| 73 | https://jlcpcb.com |
+| Case | 3D Printed Case (Will be Printed Myself) | 1 | 0.00 | 0.00 | https://hackclub.com |
+| **TOTAL** |  |  |  | **73.00** |  |
 
-# JLCPCB and Shipping
-<img width="1900" height="830" alt="image" src="https://github.com/user-attachments/assets/d32cf386-7a96-4791-8536-f676ec33d5e3" />
-<img width="1372" height="816" alt="Screenshot 2026-07-23 211038" src="https://github.com/user-attachments/assets/adb2f4d5-dff7-4a3e-8176-7249c7130f7c" />
+
+## BOM PCBA 
+
+## BOM
+
+| Comment | Designator | Footprint | LCSC | Quantity |
+| :--- | :--- | :--- | :--- | ---: |
+| 100nF | C1, C10, C12, C13, C15, C16, C17, C18, C19, C20, C22, C24, C25, C3, C5, C6 | C_0402_1005Metric | C1525 | 16 |
+| 10k | R11, R3, R9 | R_0402_1005Metric | C11616 | 3 |
+| 10uF | C4, C7 | C_0402_1005Metric | C15525 | 2 |
+| 10uF | C23 | C_0603_1608Metric | C1691 | 1 |
+| 10uF | C2 | C_0402_1005Metric | C15525 | 1 |
+| 1K | R1, R10, R4 | R_0402_1005Metric | C11702 | 3 |
+| 1N5819WS | D1 | D_SOD-323 | C2921026 | 1 |
+| 22pF | C11, C9 | C_0402_1005Metric | C1555 | 2 |
+| 22uF | C8 | C_0402_1005Metric | C105226 | 1 |
+| 4.7k | R12, R13 | R_0402_1005Metric | C11663 | 2 |
+| 470 | R2, R8 | R_0402_1005Metric | C25117 | 2 |
+| 5k1 | R5, R6 | R_0402_1005Metric | C105873 | 2 |
+| AP2112K-3.3 | U4 | SOT-23-5 | C23380830 | 1 |
+| LED_PWR | D4 | LED_0603_1608Metric | C2287 | 1 |
+| LED_USR | D5 | LED_0603_1608Metric | C2287 | 1 |
+| LIS3DH | U6 | LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y | C15134 | 1 |
+| SW_Push | SW1 | KEY-SMD_4P-L4.7-W3.5-P1.70-LS5.5 | C2915174 | 1 |
+| SW_RST | SW2 | KEY-SMD_4P-L4.7-W3.5-P1.70-LS5.5 | C2915174 | 1 |
+| USB_C_Receptacle_USB2.0_14P | J2 | USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal | C183603 | 1 |
+| W25Q32JVSSIQ_C179173 | U2 | SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL | C179173 | 1 |
+| X322512MSB4SI | X1 | Crystal_SMD_3225-4Pin_3.2x2.5mm | C9002 | 1 |
+| USBLC6-2SC6 | U5 | SOT-23-6 |  | 1 |
+
+
+# JLCPCB 
+<img width="1912" height="847" alt="Screenshot 2026-09-20 142437" src="https://github.com/user-attachments/assets/877b74cd-ed85-4297-b7c0-4ac4118da23c" />
+<img width="1072" height="681" alt="image" src="https://github.com/user-attachments/assets/543390d9-acbf-443d-87a5-7361df5517c4" />
+
+
 
