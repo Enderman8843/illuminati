@@ -52,7 +52,6 @@ First connect this device via usb-c cable to your pc then download MicroPython f
 
 ## BOM PCBA 
 
-## BOM
 
 | Comment | Designator | Footprint | LCSC | Quantity |
 | :--- | :--- | :--- | :--- | ---: |
@@ -80,9 +79,10 @@ First connect this device via usb-c cable to your pc then download MicroPython f
 | USBLC6-2SC6 | U5 | SOT-23-6 |  | 1 |
 
 
-# JLCPCB 
-<img width="1912" height="847" alt="Screenshot 2026-09-20 142437" src="https://github.com/user-attachments/assets/877b74cd-ed85-4297-b7c0-4ac4118da23c" />
-<img width="1072" height="681" alt="image" src="https://github.com/user-attachments/assets/543390d9-acbf-443d-87a5-7361df5517c4" />
+## JLCPCB 
+
+<img width="1876" height="798" alt="image" src="https://github.com/user-attachments/assets/d3bdfac8-fcb0-47c4-b718-3959f837a4fa" />
+<img width="1022" height="662" alt="image" src="https://github.com/user-attachments/assets/37b3ea8f-8faf-4c79-9cb1-4a03f15a002e" />
 
 
 
